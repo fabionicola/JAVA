@@ -1,0 +1,10 @@
+class horas implements ActionListener {
+
+        public void actionPerformed(ActionEvent e) {
+            Date sistemaHora = new Date();
+            String pmAm = "hh:mm:ss a";
+            SimpleDateFormat formato = new SimpleDateFormat(pmAm);
+            Calendar now = Calendar.getInstance();
+            hora.setText(String.format(formato.format(sistemaHora), now));
+        }
+    }
